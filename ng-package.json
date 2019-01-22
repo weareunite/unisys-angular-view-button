@@ -3,5 +3,8 @@
   "dest": "../../dist/unisys-angular-view-button",
   "lib": {
     "entryFile": "src/public_api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": [
+    "ngx-permissions"
+  ]
 }
