@@ -1,6 +1,6 @@
 {
   "name": "@weareunite/unisys-angular-view-button",
-  "version": "0.0.2",
+  "version": "0.1.2",
   "author": "UNITE s.r.o.",
   "license": "MIT",
   "repository": {
@@ -16,7 +16,7 @@
     "typescript",
     "javascript"
   ],
-  "dependencies":  {
+  "dependencies": {
     "ngx-permissions": ">=5.0.0"
   },
   "peerDependencies": {
