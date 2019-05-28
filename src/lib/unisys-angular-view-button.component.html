@@ -1,12 +1,12 @@
 <div class="pull-right" style=" position: absolute;right: 15px;top: 12px;">
   <div class="btn-group">
-    <div *ngFor="let action of actionList | filterVisibility: true">
+    <div *ngFor="let action of actionList">
       <button *ngxPermissionsOnly="action.permission" type="button" class="btn btn-sm btn-primary" (click)="clickAction(action.action)" translate>{{action.translation}}</button>
     </div>
     <div class="btn btn-sm btn-primary" appDropdown *ngIf="showCaret()">
       <span class="caret"></span>
       <ul class="dropdown-menu" role="menu" style="right: 0px;left: inherit">
-        <li *ngFor="let action of actionList | filterVisibility: false"><a (click)="clickAction(action.action)" *ngxPermissionsOnly="action.permission" translate>{{action.translation}}</a></li>
+        <li *ngFor="let action of actionList"><a (click)="clickAction(action.action)" *ngxPermissionsOnly="action.permission" translate>{{action.translation}}</a></li>
       </ul>
     </div>
   </div>
