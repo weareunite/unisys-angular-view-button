@@ -29,6 +29,7 @@ export function createTranslateLoader(http: HttpClient) {
     })
   ],
   exports: [
+    NgxPermissionsModule,
     UnisysAngularViewButtonComponent,
     FilterVisibilityPipe
   ]
