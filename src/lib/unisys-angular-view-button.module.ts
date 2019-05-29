@@ -18,7 +18,8 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   imports: [
     CommonModule,
-    NgxPermissionsModule,TranslateModule.forChild({
+    NgxPermissionsModule.forChild(),
+    TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
         useFactory: (createTranslateLoader),
